@@ -2,11 +2,11 @@
 ##                  Keyu Chen
            
 **P1**            
-![p1](gongshi1.jpg)                  
+![p1](gong1.jpg)                  
           
 **P2**            
-![p21](gongshi2.jpg)             
-![p22](gongshi3.jpg)          
+![p21](gong2.jpg)             
+![p22](gong3.jpg)          
         
 **P3**          
 The matlab code is below:       
@@ -68,10 +68,10 @@ The optimal solution is as follows:
       
 **P4**            
 P4(A)                 
-![p4](gongshi4.jpg)               
+![p4](gong4.jpg)               
    
 P4(B)          
-![p4](gongshi5.jpg)                 
+![p4](gong5.jpg)                 
         
    
 **P5**  
@@ -107,7 +107,7 @@ The tool I use is matlab
       
      
 P5(B)         
-![p5B](gongshi6.jpg)         
+![p5B](gong6.jpg)         
  
          
            
