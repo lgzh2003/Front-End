@@ -1,15 +1,17 @@
 #Linear Programming Assignment 1
 ##                  Keyu Chen
            
-**P1**            
+###P1            
 ![p1](gong1.jpg)                  
           
-**P2**            
-![p21](gong2.jpg)             
-![p22](gong3.jpg)          
-        
-**P3**          
-The matlab code is below:       
+###P2  
+**Q1**                     
+![p21](gong2.jpg)         
+**Q2**                      
+![p22](gong3.jpg)                     
+                    
+###P3          
+The matlab code is below:                       
 ```
 price =[2.563;4.307;6.422;3.488;6.581;8.993;11.481;11.730;
 9.270;10.160;1.961; 9.300;11.672;10.877;12.137];%Unit Price
@@ -56,27 +58,28 @@ values = [10000;3500;-1500;6500;-4500;3000;-1000;2500;-500;3000;4000;
 5000; 7000;10000;-2000];%%%%%%%constrains%%%%%%%%%%%%
 constrain = zeros(15,1);
 %%%%%%%solution: linprog%%%%%%%%% x = linprog(f,A,b,Aeq,beq,lb,ub,x0)
-x=linprog(-objFunc,subMain,values,[],[],constrain) 
+x=linprog(-objFunc,subMain,values,[],[],constrain);
+investment = x' 
 profitMost = profit'*x
 
 ```             
           
-The problem is feasible, and it is bounded.          
-The optimal solution is as follows:             
-         
+The problem is feasible, and it is bounded.                        
+The optimal solution is as follows:                        
+![result1](result1.png)                     
       
       
-**P4**            
-P4(A)                 
-![p4](gong4.jpg)               
-   
-P4(B)          
-![p4](gong5.jpg)                 
+###P4            
+**P4(A)**                            
+![p4](gong4.jpg)                            
+                 
+**P4(B)**                      
+![p4](gong5.jpg)                              
         
    
-**P5**  
-P5(A)                         
-The matlab code is below:           
+###P5  
+**P5(A)**                                      
+The matlab code is below:                            
 ```
 price = [0.5;2.5;0.25;0.2;0.6];%% foods price.(cookie,ramen,rice,broccoli,cornflakes)
 calories = [300;550;450;25;300];%% claories
@@ -99,15 +102,64 @@ objFunc = price;
 constrain = zeros(5,1);
 
 %%%%%%%%linprog%%%%%%%%%x=linprog(f,A,b,Aeq,beq,lb,ub)
-x =linprog(objFunc,MainSub,values,[],[],constrain)
-
+x =linprog(objFunc,MainSub,values,[],[],constrain);
+food = x'
 moneyMin = price'*x 
 ```           
-The tool I use is matlab        
-      
-     
-P5(B)         
-![p5B](gong6.jpg)         
+The tool I use is matlab, I buid the model by formate the operations refering to the 5 type of Nutrient bound.          
+The result is as follows:                 
+![result2](result2.png)
+       
+            
+**P5(B)**
+I add the constrains as follow equations:         
+![p5B](gong6.jpg)          
+The matlab code is below:                            
+```
+price = [0.5;2.5;0.25;0.2;0.6];%% foods price.(cookie,ramen,rice,broccoli,cornflakes)
+calories = [300;550;450;25;300];%% claories
+carbs = [20;25;25;4;15];%% Carbs
+protein = [5;8;4;2;3];%% protein
+fats = [10;20;5;0.5;0.5];%% Fats
+sodium = [0.1;0.9;0.1;0.1;0.1];%% Sodium
+
+%%%%%%%%%Change(no more than 50% calories)%%%%%%%%%%%%%%%
+cal_A = [150;-275;-225;-12.5;-150]; %%Cookie
+cal_B = [-150;275;-225;-12.5;-150]; %%Ramen
+cal_C = [-150;-275;225;-12.5;-150]; %%Rice
+cal_D = [-150;-275;-225;12.5;-150]; %%Broccoli
+cal_E = [-150;-275;-225;-12.5;150]; %%CornFlakes
+
+cal_Constrain = zeros(5,1);
+
+%%%%%%%%%subj function on the left%%%%%%%%
+sub_Original = [calories';-calories';carbs';-carbs';protein';-protein';fats';-fats';sodium';sodium'];
+sub_Change = [cal_A';cal_B';cal_C';cal_D';cal_E'];
+MainSub = [sub_Original;sub_Change];
+
+%%%%%%%%%values on the right%%%%%%%%
+values = [2200;-1800;100;-50;80;-30;100;-60;5;-3];
+values = [values;cal_Constrain];
+%%%%%%%%%Obj function%%%%%%%%%
+objFunc = price;
+
+%%%%%%%%%constrain%%%%%%%%%%%%%
+constrain = zeros(5,1);
+
+
+%%%%%%%%linprog%%%%%%%%%[x,z,exitflag,output,lambda]=linprog(f,A,b,Aeq,beq,lb,ub)
+x = linprog(objFunc,MainSub,values,[],[],constrain);
+food = x'
+moneyMin = price'*x
+```           
+The tool I use is matlab, I buid the model by formate the operations refering to the 5 type of Nutrient bound,and add new constrains to the code.                   
+The result is as follows:                            
+![result3](result3.png)          
+       
+   
+**P5(C)**              
+       
+         
  
          
            
