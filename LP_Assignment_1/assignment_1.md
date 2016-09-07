@@ -158,6 +158,7 @@ The result is as follows:
        
    
 **P5(C)**              
+![gongshi7](gong7.jpg)                   
        
          
  
