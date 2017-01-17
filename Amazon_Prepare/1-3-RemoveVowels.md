@@ -1,6 +1,7 @@
 ##Remove Vowels
-1. Remove "AEIOUaeiou" from a given string.              
-For instance: Apple => ppl              
+1. Remove "AEIOUaeiou" from a given string.                      
+              
+For instance: Apple => ppl                                    
               PoliceMan => PlcMn                                  
        
 ```
