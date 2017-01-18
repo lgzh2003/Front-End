@@ -6,6 +6,8 @@ This part is a preparation for amazon New Grad
 2. [Grey Code](1-2-GreyCode.md)            
 3. [Remove Vowels](1-3-RemoveVowels.md)        
 4. [ValidParentheses](1-4-ValidParentheses.md)       
-5. [LongestPalindromicSubstring](1-5-LongestPalindromicSubstring.md)          
+5. [LongestPalindromicSubstring](1-5-LongestPalindromicSubstring.md)           
+6. [MergeTwoSortedList](1-6-MergeTwoSortedList.md)               
+           
                
            
