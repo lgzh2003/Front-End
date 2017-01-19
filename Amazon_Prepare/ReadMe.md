@@ -2,7 +2,7 @@
 This part is a preparation for amazon New Grad          
                  
 ##AWS
-1. [AWS Introduction](AWS-Introduction.txt)                   
+1. [AWS Introduction](AWS-Introduction)                   
       
 ##Easy Coding
 1. [Right Rotation](1-1-RightRotation.md)                    
