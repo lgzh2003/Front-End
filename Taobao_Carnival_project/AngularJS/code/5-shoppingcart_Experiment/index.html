@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../vendor/Bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="../../vendor/AngularJS/angularjs.js"></script>
+</head>
+<body ng-app="myApp">
+    <script type="text/javascript" src = "js/cart_controller.js"></script>
+    <div class="container" ng-controller="cartController">
+        <table class="table" ng-show="cart.length!==0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price_per</th>
+                    <th>Price_Total</th>
+                    <th>Mainipulation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in cart">
+                    <td>{{item.id}}</td>
+                    <td>{{item.product}}</td>
+                    <td><button type="button" class="btn btn-info" ng-click="minusByOne(item.id)">-</button>
+                        <input type="text" ng-model="item.quantity"  />
+                        <button type="button" class="btn btn-info" ng-click="plusByOne(item.id)">+</button>
+                    </td>
+                    <td>RMB {{item.price_per}}</td>
+                    <td>RMB {{item.quantity * item.price_per}}</td>
+                    <td>
+                        <button type="button" ng-click="remove(item.id)" class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TotalQuantity</td>
+                    <td>{{totalQuantity()}}  </td>
+                    <td>TotalPrice</td>
+                    <td>RMB {{totalPrice()}}</td>
+                    <td>    <button type="button" ng-click="removeAll()" class="btn btn-danger">Delete All</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 ng-show="cart.length===0"> The shopping cart has been cleared</h3>
+    </div>
+</body>
+</html>

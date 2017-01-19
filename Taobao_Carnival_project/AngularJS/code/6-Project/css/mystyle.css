@@ -1,0 +1,11 @@
+.page-header{
+    margin-top: 0;
+    background-color: #4da6ff;
+    background-image: url(http://www.yoursite.com/folder/image.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+body{
+    margin-top: 0;
+}
