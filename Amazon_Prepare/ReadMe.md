@@ -17,3 +17,7 @@ This part is a preparation for amazon New Grad
            
                
            
+##Data Structure
+1. [PriorityQueue](DataStructure/1-1-PriorityQueue.md)                   
+                   
+
