@@ -24,7 +24,8 @@
 - 注意7:此类及其迭代器实现了 Collection 和 Iterator 接口的所有可选 方法。                 
            
 ###Methods          
-           
+![riorityQueue-method](img/1-PriorityQueue-method.png)          
+         
 ###Possible Useful Link
 [PriorityQueue深入解析](http://blog.csdn.net/kobejayandy/article/details/46832797)                     
 [Java Comparable & Comparator](http://shmilyaw-hotmail-com.iteye.com/blog/1439450)                  
