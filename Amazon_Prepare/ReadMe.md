@@ -11,7 +11,9 @@ This part is a preparation for amazon New Grad
 4. [Valid Parentheses](1-4-ValidParentheses.md)       
 5. [Longest Palindromic Substring](1-5-LongestPalindromicSubstring.md)           
 6. [Merge Two Sorted List](1-6-MergeTwoSortedList.md)          
-7. [Reverse Second half of LinkedList](1-7-ReverseSecondHalfOfLinkedList.md)            
+7. [Reverse Second half of LinkedList](1-7-ReverseSecondHalfOfLinkedList.md)                
+8. [Is Subtree(binary tree)](1-8-IsSubtree.md)                
+            
            
                
            
