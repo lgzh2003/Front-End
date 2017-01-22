@@ -28,5 +28,9 @@ This part is a preparation for amazon New Grad
 1. [PriorityQueue](DataStructure/1-1-PriorityQueue.md)                   
                    
 2. [Comparator](DataStructure/1-2-Comparator.md)             
-        
+             
+          
+##Extra Knowledge       
+1. [Regular Expression](1-RegularExpression.md)                     
+2.       
 
