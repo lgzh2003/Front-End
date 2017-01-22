@@ -22,4 +22,6 @@ This part is a preparation for amazon New Grad
 ##Data Structure
 1. [PriorityQueue](DataStructure/1-1-PriorityQueue.md)                   
                    
+2. [Comparator](DataStructure/1-2-Comparator.md)             
+        
 
