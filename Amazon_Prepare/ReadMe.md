@@ -15,6 +15,7 @@ This part is a preparation for amazon New Grad
 8. [Is Subtree(binary tree)](1-8-IsSubtree.md)             
 9. [Find K Nearest Point](1-9-Find_K_NearestPoint.md)            
 10. [Overlap Rectangle](1-10-OverlapRectangle.md)               
+11. [Window Sum](1-11-WindowSum.md)             
                  
                 
             
