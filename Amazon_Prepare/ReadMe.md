@@ -23,7 +23,8 @@ This part is a preparation for amazon New Grad
 ##Median Coding       
 1. [LRUCache](2-1-LRUCache.md)       
 2. [Rotate Matrix](2-2-RotateMatrix.md)                 
-          
+3. [Linked List Cycle](2-3-loopsInLinkedList.md)                     
+         
                   
                  
                 
