@@ -17,6 +17,11 @@ This part is a preparation for amazon New Grad
 10. [Overlap Rectangle](1-10-OverlapRectangle.md)               
 11. [Window Sum](1-11-WindowSum.md)            
 12. [GCD Greatest Common Divisor](1-12-GreatestCommonDivisor.md)          
+               
+                
+          
+##Median Coding       
+1. [LRUCache](2-1-LRUCache.md)          
                   
                  
                 
