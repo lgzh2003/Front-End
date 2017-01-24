@@ -23,7 +23,8 @@ This part is a preparation for amazon New Grad
 ##Median Coding       
 1. [LRUCache](2-1-LRUCache.md)       
 2. [Rotate Matrix](2-2-RotateMatrix.md)                 
-3. [Linked List Cycle](2-3-loopsInLinkedList.md)                     
+3. [Linked List Cycle](2-3-loopsInLinkedList.md)       
+4. [Binary search tree minimum sum from root to leaf](2-4-BSTMinimumLength.md)                                      
          
                   
                  
@@ -40,7 +41,9 @@ This part is a preparation for amazon New Grad
           
 ##Extra Knowledge       
 1. [Regular Expression](ExtraKnowledge/1-RegularExpression.md)           
-2. [LRU(Least Recently Used Algorithm)](ExtraKnowledge/2-LRU.md)                                   
+2. [LRU(Least Recently Used Algorithm)](ExtraKnowledge/2-LRU.md)             
+3. [(BST)BinarySearchTree](3-BinarySearchTree.md)                     
+                                  
               
            
                        
