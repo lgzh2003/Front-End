@@ -31,6 +31,11 @@ This part is a preparation for amazon New Grad
              
           
 ##Extra Knowledge       
-1. [Regular Expression](ExtraKnowledge/1-RegularExpression.md)                     
+1. [Regular Expression](ExtraKnowledge/1-RegularExpression.md)           
+2. [LRU(Least Recently Used Algorithm)](ExtraKnowledge/2-LRU.md)                                   
+              
+           
+                       
+                     
      
 
