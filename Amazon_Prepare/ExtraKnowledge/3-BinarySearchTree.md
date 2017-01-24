@@ -2,7 +2,7 @@
 ###Introduction
 它是特殊的二叉树：对于二叉树，假设x为二叉树中的任意一个结点，x节点包含关键字key，节点x的key值记为key[x]。如果y是x的左子树中的一个结点，则key[y] <= key[x]；               
 如果y是x的右子树的一个结点，则key[y] >= key[x]。那么，这棵树就是二叉查找树。如下图所示：                                           
-![BST](/DataStructure/img/4-bst.png)           
+![BST](DataStructure/img/4-bst.png)           
         
 在二叉查找树中：                 
 - 若任意节点的左子树不空，则左子树上所有结点的值均小于它的根结点的值；           
