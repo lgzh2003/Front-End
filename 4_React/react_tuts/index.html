@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React Learning</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script src = "bower_components/react/react.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+    <script type="text/babel">
+        ReactDOM.render(
+                <div>
+                    <h1>Hello World</h1>
+                    <h2>Let's learn React</h2>
+                    <p data-myattribute = "somevalue">这是一个很不错的 JavaScript 库!</p>
+                </div>
+                ,
+                document.getElementById('app')
+        );
+    </script>
+
+    <div id="example"></div>
+    <script type="text/babel">
+        var HelloMessage = React.createClass({
+            render: function() {
+                return <h1 onClick={this.alertMe}>Hello World！!!Click On me</h1>;
+            },
+            alertMe: function(){
+                alert("You've clicked on me!!");
+            }
+        });
+
+        ReactDOM.render(
+                <HelloMessage />,
+                document.getElementById('example'),
+                function () {
+                    console.log("render complete");
+                }
+        );
+    </script>
+
+    <div id ="keyu"></div>
+    <script type="text/babel">
+        var Website = React.createClass({
+            render: function() {
+                return (
+                        <div>
+                            <Name name = {this.props.name}/>
+                            <Site site = {this.props.site} />
+                        </div>
+                );
+            }
+        });
+        var Name = React.createClass({
+            render: function () {
+                return (
+                        <h1>{this.props.name}</h1>
+                );
+            }
+        });
+        var Site = React.createClass({
+            render: function () {
+                return (
+                        <a href={this.props.site}>{this.props.site}</a>
+                );
+            }
+        });
+
+        ReactDOM.render(
+                <Website name="Keyu Personal Website" site="http://www.keyuchen.site"/>,
+                document.getElementById('keyu'),
+        );
+    </script>
+</body>
+</html>
