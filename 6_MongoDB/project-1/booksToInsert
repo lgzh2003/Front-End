@@ -1,0 +1,26 @@
+db.books.insert({
+	title: 'JavaScript and JQuery: Interactive Front-End Web Development',
+	author:'Jon Duckett',
+	category: 'Programming'
+})
+
+db.books.insert({
+	title: 'Node.js: Creating Applications from Scratch',
+	author:'Joshua Johanan',
+	category: 'Programming'
+})
+
+db.books.insert({
+	title: 'Organic Chemistry',
+	author:'L. G. Wade',
+	category: 'Chemistry'
+})
+
+
+
+use bookstore
+show collections
+db.books.find()
+db.books.find().pretty
+
+

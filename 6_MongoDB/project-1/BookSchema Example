@@ -1,0 +1,25 @@
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+var BookSchema;
+BookSchema = new Schema({
+    title: {
+        type: String,
+        required: true,
+        unique: true // for instance email should be unique
+    },
+    published{
+        type: Date,
+        default: Date.now()
+    },
+    //embedded sub-document
+    detail: {
+        modelNumber: Number,
+        hardCover: Boolean,
+        reviews: Number,
+        rank: Number
+    }
+
+});
+module.exports = mongoose.model('Book',BookSchema);// name our schema book
+
+
