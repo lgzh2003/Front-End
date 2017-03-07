@@ -1,0 +1,21 @@
+mongo
+show dbs
+use bookstore
+show collections
+db.createCollections('users')
+
+db.users.insert({
+	username: 'max',
+	email:'max@gmail.com',
+	password: '1234'
+})
+
+db.users.insert({
+	username: 'admin',
+	email:'admin@gmail.com',
+	password: '1234'
+})
+
+
+db.users.find().pretty()
+
